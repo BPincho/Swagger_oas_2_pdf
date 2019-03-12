@@ -2,7 +2,7 @@
 Modular application that can be used to directly convert a json swagger oas to a static pdf file.
 
 <h2> But why? </h2>
-<p> Had to convert a swagger oas to pdf in a transparent manner. Found many partial solutions online, but none fully integrated everything, so i sort off created one and made it public for the good people of the internet. </p>
+<p> Had to convert a swagger oas to pdf in a transparent manner. Found many partial solutions online, but none fully integrated everything, so i sort off created one.</p>
 <p> This app uses Swagger2markup-cli to convert swagger oas to markup and asciidoctor-pdf to convert from markup to pdf with some python to glue everything together nicely. Therefore i used:</p>
 <ul>
   <li> Java 8 </li>
