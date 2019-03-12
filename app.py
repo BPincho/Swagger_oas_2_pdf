@@ -13,12 +13,11 @@ def downloadPdf(api_url):
 		json_url = api_url
 	try:	
 		call(["java","-jar","swagger2markup-cli-1.3.3.jar","convert","-i",
-			 json_url,"-f","DAA_API"])
+			 json_url,"-f","API_Doc"])
 		print("markup to pdf convertion \n")
-		import pdb;pdb.set_trace()
-		call(["asciidoctor-pdf", "DAA_API.adoc"])
+		call(["asciidoctor-pdf", "API_Doc.adoc"])
 		print("PDF Generated \n")
-		path = "DAA_API.pdf"
+		path = "API_Doc.pdf"
 		return send_file(path, as_attachment=True)
 	except FileNotFoundError:
 		return abort(418)
